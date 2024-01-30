@@ -218,13 +218,13 @@ You can generate XML that declares XML namespace prefix / URI pairs with xmlns a
 Example declaring a default namespace on the root element:
 
 ```javascript
-let obj = { 
+let obj = {
   Foo: {
     $: {
       "xmlns": "http://foo.com"
-    }   
+    }
   }
-};  
+};
 ```
 Result of `buildObject(obj)`:
 ```xml
@@ -324,7 +324,7 @@ value})``. Possible options are:
     Version 0.1 default was `@`.
   * `charkey` (default: `_`): Prefix that is used to access the character
     content. Version 0.1 default was `#`.
-  * `explicitCharkey` (default: `false`) Determines whether or not to use 
+  * `explicitCharkey` (default: `false`) Determines whether or not to use
     a `charkey` prefix for elements with no attributes.
   * `trim` (default: `false`): Trim the whitespace at the beginning and end of
     text nodes.
@@ -505,3 +505,7 @@ proper forum for support problems. Some problems might as well really be bugs
 in `xml2js`, if so I'll let you know to open an issue instead :)
 
 But if you know you really found a bug, feel free to open an issue instead.
+
+
+REBUILD:
+./node_modules/.bin/coffee -cw -o lib src
